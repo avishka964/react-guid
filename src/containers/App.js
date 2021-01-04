@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import classes from "./App.css"
-import Person from "./Person/Person"
-import ErrorBoundary from "./ErrorBoundary/ErrorBoundary"
+import Persons from "../components/Persons/Persons"
+import Cockpit from "../components/Cockpit/Cockpit"
 
 class App extends Component {
   state = {
@@ -12,6 +12,7 @@ class App extends Component {
     ],
     otherState: "some other value",
     showPersons: false,
+    alt: true,
   }
 
   nameChangeHandler = (event, id) => {
@@ -45,46 +46,25 @@ class App extends Component {
 
   render() {
     let persons = null
-    let btnClass = ""
 
     if (this.state.showPersons) {
       persons = (
-        <div>
-          {this.state.persons.map((persons, index) => {
-            return (
-              <ErrorBoundary key={persons.id}>
-                <Person
-                  click={() => this.deletePersonsHandler(index)}
-                  name={persons.name}
-                  age={persons.age}
-                  change={(event) => this.nameChangeHandler(event, persons.id)}
-                />
-              </ErrorBoundary>
-            )
-          })}
-        </div>
+        <Persons
+          persons={this.state.persons}
+          clicked={this.deletePersonsHandler}
+          changed={this.nameChangeHandler}
+        />
       )
-      btnClass = classes.Red
-    }
-
-    let assignedClasses = []
-    if (this.state.persons.length <= 2) {
-      assignedClasses.push(classes.red) //classes = ["red"]
-    }
-    if (this.state.persons.length <= 1) {
-      assignedClasses.push(classes.bold) //classes = ["red", "bold"]
     }
 
     return (
       <div className={classes.App}>
-        <h1>Hi, I'm a React App</h1>
-        <p className={assignedClasses.join(" ")}>This is really working!</p>
-        <button
-          className={btnClass}
-          alt={this.state.showPersons}
-          onClick={this.togglePersonsHandler}>
-          Toggle Persons
-        </button>
+        <Cockpit
+          title={this.props.appTitle}
+          showPersons={this.state.showPersons}
+          persons={this.state.persons}
+          clicked={this.togglePersonsHandler}
+        />
         {persons}
       </div>
     )

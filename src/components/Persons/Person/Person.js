@@ -1,12 +1,7 @@
 import React from "react"
 import classes from "../Person/Person.css"
 
-const person = (props) => {
-  const rnd = Math.random()
-
-  if (rnd > 0.7) {
-    throw new Error("Something went wrong")
-  }
+const Person = (props) => {
   return (
     <div className={classes.Person}>
       <p onClick={props.click}>
@@ -18,4 +13,4 @@ const person = (props) => {
   )
 }
 
-export default person
+export default Person
