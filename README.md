@@ -11,3 +11,6 @@
 * Section-9 : Reaching out to the web (HTTP-Ajax)
 * Section-10 : Burgur builder project- Accesing a server
 * Section-11 : Multi-page feeling in a single page app (Routing)
+* Section-12 : Add router to burgur project
+* Section-13 : Forms and form validations
+* Section-14 : Rudux
