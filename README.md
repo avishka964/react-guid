@@ -14,3 +14,11 @@
 * Section-12 : [Add router to burgur project](https://github.com/avishka964/burger-builder-project-V1)
 * Section-13 : [Forms and form validations](https://github.com/avishka964/burger-builder-project-V1)
 * Section-14 : Rudux
+* Section-15 : [Add redux to the burger project](https://github.com/avishka964/burger-builder-project-V1)
+* Section-16 : Redux advanced
+* Section-17 : Redux advanced [Burger project](https://github.com/avishka964/burger-builder-project-V1)
+* Section-18 : Adding authentication to burger project [Burger project](https://github.com/avishka964/burger-builder-project-V1)
+* Section-19 : Improve burger project
+* Section-20 : Testing
+* Section-21 : Deploying app
+* Section-22 : Working with webpack
