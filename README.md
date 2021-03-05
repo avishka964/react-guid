@@ -22,3 +22,8 @@
 * Section-20 : Testing
 * Section-21 : Deploying app
 * Section-22 : Working with webpack
+* Section-23 : Next.js
+* Section-24 : Animations in react app
+* Section-25 : A brief introduction to redux saga
+* Section-26 : React hooks
+
