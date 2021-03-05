@@ -1,6 +1,6 @@
 # react-guide
 
-#### Learning stuff
+#### Module sections
 
 * Section-3 : Understanding the base features and syntax
 * Section-4 : Working with list and conditionals
@@ -21,9 +21,9 @@
 * Section-19 : Improve burger project
 * Section-20 : Testing
 * Section-21 : Deploying app
-* Section-22 : Working with webpack
+* Section-22 : Working with [webpack](https://github.com/avishka964/webpack.git)
 * Section-23 : Next.js
 * Section-24 : Animations in react app
-* Section-25 : A brief introduction to redux saga
+* Section-25 : A brief introduction to [Redux Saga](https://github.com/avishka964/burger-builder-project-V1)
 * Section-26 : React hooks
 
